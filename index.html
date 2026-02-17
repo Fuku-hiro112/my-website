@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>福田寛和 - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-inner">
+        <span class="logo">H.Fukuda</span>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero">
+      <canvas id="particles"></canvas>
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="glitch" data-text="福田 寛和">福田 寛和</h1>
+        <div class="typing-wrapper">
+          <span class="typing-text"></span><span class="cursor">|</span>
+        </div>
+        <a href="#about" class="btn btn-hero">もっと知る</a>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-circle">
+            <span>HF</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            はじめまして、<strong>福田寛和</strong>です。
+          </p>
+          <p>
+            プログラミングと動画鑑賞が好きで、日々新しい技術やコンテンツに触れることを楽しんでいます。
+            ものづくりが好きで、コードを書いてアイデアを形にすることにやりがいを感じています。
+            チームでの開発にも興味があり、協力して大きなものを作り上げることに魅力を感じています。
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-icon">&#128187;</span>
+              <span class="stat-label">プログラミング</span>
+            </div>
+            <div class="stat">
+              <span class="stat-icon">&#127916;</span>
+              <span class="stat-label">動画鑑賞</span>
+            </div>
+            <div class="stat">
+              <span class="stat-icon">&#128161;</span>
+              <span class="stat-label">ものづくり</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-dark fade-in">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-header">
+            <span>HTML / CSS</span>
+            <span>90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span>JavaScript</span>
+            <span>75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span>Web開発</span>
+            <span>80%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span>問題解決力</span>
+            <span>85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">Experience & Works</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2026</span>
+            <h3>ポートフォリオサイト制作</h3>
+            <p>HTML / CSS / JavaScript を使用して、このポートフォリオサイトをゼロから制作。レスポンシブデザインやアニメーションを実装。</p>
+            <div class="timeline-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">学習中</span>
+            <h3>Webアプリケーション開発</h3>
+            <p>フロントエンドからバックエンドまで幅広く学習中。実践的なアプリケーションの開発に取り組んでいます。</p>
+            <div class="timeline-tags">
+              <span class="tag">フロントエンド</span>
+              <span class="tag">バックエンド</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hobbies" class="section section-dark fade-in">
+    <div class="container">
+      <h2 class="section-title">Hobbies</h2>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <div class="hobby-icon-wrapper">
+            <div class="hobby-icon">&#128187;</div>
+            <div class="hobby-glow"></div>
+          </div>
+          <h3>プログラミング</h3>
+          <p>コードを書いて新しいものを作ることが大好きです。Webアプリケーションやツールの開発を楽しんでいます。</p>
+          <div class="hobby-tags">
+            <span class="tag">Web</span>
+            <span class="tag">アプリ開発</span>
+            <span class="tag">ツール作成</span>
+          </div>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-icon-wrapper">
+            <div class="hobby-icon">&#127916;</div>
+            <div class="hobby-glow"></div>
+          </div>
+          <h3>動画鑑賞</h3>
+          <p>映画やYouTubeなど、さまざまなジャンルの動画を観ることが日々のリラックスタイムです。</p>
+          <div class="hobby-tags">
+            <span class="tag">映画</span>
+            <span class="tag">YouTube</span>
+            <span class="tag">アニメ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="values" class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">My Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-number">01</div>
+          <h3>好奇心</h3>
+          <p>新しい技術やトレンドに常にアンテナを張り、学び続ける姿勢を大切にしています。</p>
+        </div>
+        <div class="value-card">
+          <div class="value-number">02</div>
+          <h3>継続力</h3>
+          <p>目標に向かって粘り強く取り組み、最後までやり遂げることを心がけています。</p>
+        </div>
+        <div class="value-card">
+          <div class="value-number">03</div>
+          <h3>チームワーク</h3>
+          <p>一人ではできないことも、チームで協力すれば実現できると信じています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-gradient fade-in">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-text">お気軽にご連絡ください</p>
+      <div class="contact-cards">
+        <a href="mailto:example@example.com" class="contact-card">
+          <div class="contact-icon">&#9993;</div>
+          <span>Email</span>
+        </a>
+        <a href="#" class="contact-card">
+          <div class="contact-icon">&#128424;</div>
+          <span>GitHub</span>
+        </a>
+        <a href="#" class="contact-card">
+          <div class="contact-icon">&#120143;</div>
+          <span>X</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">H.Fukuda</p>
+      <p>&copy; 2026 福田寛和. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    /* ===== Particle Animation ===== */
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    class Particle {
+      constructor() { this.reset(); }
+      reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 3 + 1;
+        this.speedX = (Math.random() - 0.5) * 0.8;
+        this.speedY = (Math.random() - 0.5) * 0.8;
+        this.opacity = Math.random() * 0.5 + 0.2;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
+        ctx.fill();
+      }
+    }
+
+    for (let i = 0; i < 80; i++) particles.push(new Particle());
+
+    function drawLines() {
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 120) {
+            ctx.beginPath();
+            ctx.strokeStyle = `rgba(255, 255, 255, ${0.1 * (1 - dist / 120)})`;
+            ctx.lineWidth = 0.5;
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => { p.update(); p.draw(); });
+      drawLines();
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    /* ===== Typing Effect ===== */
+    const phrases = ['プログラマー', 'Web開発者', '動画好き', 'ものづくりが好き'];
+    let phraseIndex = 0, charIndex = 0, isDeleting = false;
+    const typingEl = document.querySelector('.typing-text');
+
+    function typeEffect() {
+      const current = phrases[phraseIndex];
+      typingEl.textContent = isDeleting
+        ? current.substring(0, charIndex--)
+        : current.substring(0, charIndex++);
+      if (!isDeleting && charIndex > current.length) {
+        setTimeout(() => { isDeleting = true; typeEffect(); }, 1800);
+        return;
+      }
+      if (isDeleting && charIndex < 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+      }
+      setTimeout(typeEffect, isDeleting ? 50 : 120);
+    }
+    typeEffect();
+
+    /* ===== Scroll Animations ===== */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    /* ===== Skill Bar Animation ===== */
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.skill-fill').forEach(bar => {
+            bar.style.width = bar.dataset.width + '%';
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('#skills').forEach(el => skillObserver.observe(el));
+
+    /* ===== Nav Background on Scroll ===== */
+    window.addEventListener('scroll', () => {
+      document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>
