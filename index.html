@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>福田寛和 - Portfolio</title>
+  <title>Hirokazu Fukuda - Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,330 +15,213 @@
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#hobbies">Hobbies</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#certifications">Certifications</a></li>
         </ul>
       </div>
     </nav>
     <div class="hero">
-      <canvas id="particles"></canvas>
       <div class="hero-content">
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1 class="glitch" data-text="福田 寛和">福田 寛和</h1>
-        <div class="typing-wrapper">
-          <span class="typing-text"></span><span class="cursor">|</span>
-        </div>
-        <a href="#about" class="btn btn-hero">もっと知る</a>
-      </div>
-      <div class="scroll-indicator">
-        <div class="mouse">
-          <div class="wheel"></div>
-        </div>
+        <p class="hero-greeting">Software Developer</p>
+        <h1>福田 寛和</h1>
+        <p class="hero-sub">セキュリティソフトウェア開発 / バックエンド・フロントエンド</p>
       </div>
     </div>
   </header>
 
-  <section id="about" class="section fade-in">
+  <section id="about" class="section">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-grid">
-        <div class="about-avatar">
-          <div class="avatar-circle">
-            <span>HF</span>
+      <h2 class="section-title">About</h2>
+      <div class="about-content">
+        <p>
+          セキュリティソフトウェアの開発に従事するソフトウェアエンジニアです。
+          Elasticsearchを活用した検索エンジン開発や、AWSを用いたクラウド環境でのデータベース開発を行っています。
+        </p>
+        <p>
+          要件定義から設計・実装・テストまで一貫して対応でき、
+          顧客ヒアリングに基づいた要件整理やチーム内のレビュー・QA活動にも積極的に取り組んでいます。
+          可読性・保守性の高い設計を重視し、チームの生産性向上にも貢献しています。
+        </p>
+        <div class="about-highlights">
+          <div class="highlight">
+            <span class="highlight-label">主な領域</span>
+            <span class="highlight-value">セキュリティ製品開発</span>
           </div>
-        </div>
-        <div class="about-text">
-          <p>
-            はじめまして、<strong>福田寛和</strong>です。
-          </p>
-          <p>
-            プログラミングと動画鑑賞が好きで、日々新しい技術やコンテンツに触れることを楽しんでいます。
-            ものづくりが好きで、コードを書いてアイデアを形にすることにやりがいを感じています。
-            チームでの開発にも興味があり、協力して大きなものを作り上げることに魅力を感じています。
-          </p>
-          <div class="about-stats">
-            <div class="stat">
-              <span class="stat-icon">&#128187;</span>
-              <span class="stat-label">プログラミング</span>
-            </div>
-            <div class="stat">
-              <span class="stat-icon">&#127916;</span>
-              <span class="stat-label">動画鑑賞</span>
-            </div>
-            <div class="stat">
-              <span class="stat-icon">&#128161;</span>
-              <span class="stat-label">ものづくり</span>
-            </div>
+          <div class="highlight">
+            <span class="highlight-label">担当工程</span>
+            <span class="highlight-value">要件定義 ~ 導入</span>
+          </div>
+          <div class="highlight">
+            <span class="highlight-label">チーム規模</span>
+            <span class="highlight-value">5~10名</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="skills" class="section section-dark fade-in">
+  <section id="skills" class="section section-alt">
     <div class="container">
       <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-item">
-          <div class="skill-header">
-            <span>HTML / CSS</span>
-            <span>90%</span>
-          </div>
-          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+      <div class="skills-categories">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Java</span><span class="skill-detail">1年 / 設計思想に基づいた保守性の高いコーディング</span></li>
+            <li><span class="skill-name">C#</span><span class="skill-detail">2年6ヶ月 / 設計思想に基づいた保守性の高いコーディング</span></li>
+            <li><span class="skill-name">Python</span><span class="skill-detail">2ヶ月 / 既存コードの読解・改修</span></li>
+            <li><span class="skill-name">Shell</span><span class="skill-detail">スクリプト作成</span></li>
+          </ul>
         </div>
-        <div class="skill-item">
-          <div class="skill-header">
-            <span>JavaScript</span>
-            <span>75%</span>
-          </div>
-          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        <div class="skill-category">
+          <h3>Products / Cloud</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Elasticsearch</span><span class="skill-detail">検索エンジンを活用したローコード開発</span></li>
+            <li><span class="skill-name">Kibana</span><span class="skill-detail">データ可視化</span></li>
+            <li><span class="skill-name">AWS</span><span class="skill-detail">クラウド環境でのDB開発</span></li>
+          </ul>
         </div>
-        <div class="skill-item">
-          <div class="skill-header">
-            <span>Web開発</span>
-            <span>80%</span>
-          </div>
-          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-header">
-            <span>問題解決力</span>
-            <span>85%</span>
-          </div>
-          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        <div class="skill-category">
+          <h3>Tools / Others</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Git / GitHub</span><span class="skill-detail">バージョン管理</span></li>
+            <li><span class="skill-name">Unity</span><span class="skill-detail">3Dゲーム開発（学生時代）</span></li>
+            <li><span class="skill-name">Visual Studio</span><span class="skill-detail">開発環境</span></li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="experience" class="section fade-in">
+  <section id="experience" class="section">
     <div class="container">
-      <h2 class="section-title">Experience & Works</h2>
+      <h2 class="section-title">Experience</h2>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="timeline-dot"></div>
+          <div class="timeline-marker"></div>
           <div class="timeline-content">
-            <span class="timeline-date">2026</span>
-            <h3>ポートフォリオサイト制作</h3>
-            <p>HTML / CSS / JavaScript を使用して、このポートフォリオサイトをゼロから制作。レスポンシブデザインやアニメーションを実装。</p>
+            <span class="timeline-date">2025年4月 ~ 現在</span>
+            <h3>セキュリティ製品の開発</h3>
+            <p class="timeline-role">開発メンバー</p>
+            <p>Elasticsearchを活用したセキュリティ製品の新規開発に従事。要件定義、設計、製造、テスト、リリースまでの一連の工程を7件担当。</p>
+            <ul class="timeline-achievements">
+              <li>他メンバーから引き継いだ複雑な詳細設計工程を、例外処理を含めて整理し可読性の高いコードで完成</li>
+              <li>インスペクションにて指摘ゼロ・追加修正なしで工程を完了</li>
+              <li>処理速度・保守性向上を意識した改善案を顧客に提案し、運用負荷の軽減に貢献</li>
+              <li>新規参入メンバー向けにElasticsearchの基本資料・問題集を自主作成し、チームの立ち上がりを効率化</li>
+            </ul>
             <div class="timeline-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
+              <span class="tag">Java</span>
+              <span class="tag">Elasticsearch</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Shell</span>
+              <span class="tag">Python</span>
             </div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">学習中</span>
-            <h3>Webアプリケーション開発</h3>
-            <p>フロントエンドからバックエンドまで幅広く学習中。実践的なアプリケーションの開発に取り組んでいます。</p>
-            <div class="timeline-tags">
-              <span class="tag">フロントエンド</span>
-              <span class="tag">バックエンド</span>
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="works" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Works</h2>
+      <div class="works-grid">
+        <div class="work-card">
+          <div class="work-header">
+            <h3>MagicAction</h3>
+            <span class="work-period">2024年2月 ~ 7月</span>
+          </div>
+          <p>3Dアクションゲーム。物理学の公式やBoidsアルゴリズムを応用し、敵AIの自然な徘徊・接敵行動を実装。プログラム総コード量 4,153行。</p>
+          <div class="work-learnings">
+            <strong>学び：</strong>計画性を持ったクラス設計の重要性。過度な抽象化と泥臭い実装の両方を避け、変更に強い設計を意識する姿勢を獲得。
+          </div>
+          <div class="timeline-tags">
+            <span class="tag">C#</span>
+            <span class="tag">Unity</span>
+            <span class="tag">Visual Studio</span>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="work-header">
+            <h3>カナデアイ</h3>
+            <span class="work-period">学生時代</span>
+          </div>
+          <p>学生時代に制作したゲーム作品。</p>
+          <div class="timeline-tags">
+            <span class="tag">C#</span>
+            <span class="tag">Unity</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="hobbies" class="section section-dark fade-in">
+  <section id="certifications" class="section">
     <div class="container">
-      <h2 class="section-title">Hobbies</h2>
-      <div class="hobbies-grid">
-        <div class="hobby-card">
-          <div class="hobby-icon-wrapper">
-            <div class="hobby-icon">&#128187;</div>
-            <div class="hobby-glow"></div>
-          </div>
-          <h3>プログラミング</h3>
-          <p>コードを書いて新しいものを作ることが大好きです。Webアプリケーションやツールの開発を楽しんでいます。</p>
-          <div class="hobby-tags">
-            <span class="tag">Web</span>
-            <span class="tag">アプリ開発</span>
-            <span class="tag">ツール作成</span>
-          </div>
+      <h2 class="section-title">Certifications</h2>
+      <div class="cert-list">
+        <div class="cert-item">
+          <span class="cert-year">2025.12</span>
+          <span class="cert-name">Foundational C# with Microsoft</span>
         </div>
-        <div class="hobby-card">
-          <div class="hobby-icon-wrapper">
-            <div class="hobby-icon">&#127916;</div>
-            <div class="hobby-glow"></div>
-          </div>
-          <h3>動画鑑賞</h3>
-          <p>映画やYouTubeなど、さまざまなジャンルの動画を観ることが日々のリラックスタイムです。</p>
-          <div class="hobby-tags">
-            <span class="tag">映画</span>
-            <span class="tag">YouTube</span>
-            <span class="tag">アニメ</span>
-          </div>
+        <div class="cert-item">
+          <span class="cert-year">2025.10</span>
+          <span class="cert-name">基本情報技術者試験</span>
+        </div>
+        <div class="cert-item">
+          <span class="cert-year">2019.12</span>
+          <span class="cert-name">Microsoft Office Specialist Excel 2016</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="values" class="section fade-in">
+  <section id="strengths" class="section section-alt">
     <div class="container">
-      <h2 class="section-title">My Values</h2>
-      <div class="values-grid">
-        <div class="value-card">
-          <div class="value-number">01</div>
-          <h3>好奇心</h3>
-          <p>新しい技術やトレンドに常にアンテナを張り、学び続ける姿勢を大切にしています。</p>
+      <h2 class="section-title">Strengths</h2>
+      <div class="strengths-grid">
+        <div class="strength-card">
+          <h3>多角的な視点</h3>
+          <p>個別の事象に留まらず構造的な問題として捉え、水平展開で類似リスクを洗い出す分析力。再発防止を意識した提案を行います。</p>
         </div>
-        <div class="value-card">
-          <div class="value-number">02</div>
-          <h3>継続力</h3>
-          <p>目標に向かって粘り強く取り組み、最後までやり遂げることを心がけています。</p>
+        <div class="strength-card">
+          <h3>積極性と向上心</h3>
+          <p>複雑な設計のタスクにも自ら手を挙げ、公式ドキュメントの読み込みや周囲との積極的なコミュニケーションで課題を解決します。</p>
         </div>
-        <div class="value-card">
-          <div class="value-number">03</div>
-          <h3>チームワーク</h3>
-          <p>一人ではできないことも、チームで協力すれば実現できると信じています。</p>
+        <div class="strength-card">
+          <h3>可読性へのこだわり</h3>
+          <p>処理速度・保守性を意識した設計を行い、「コードを書かせるなら福田さん」と評価される品質を追求しています。</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section section-gradient fade-in">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <p class="contact-text">お気軽にご連絡ください</p>
-      <div class="contact-cards">
-        <a href="mailto:example@example.com" class="contact-card">
-          <div class="contact-icon">&#9993;</div>
-          <span>Email</span>
-        </a>
-        <a href="#" class="contact-card">
-          <div class="contact-icon">&#128424;</div>
-          <span>GitHub</span>
-        </a>
-        <a href="#" class="contact-card">
-          <div class="contact-icon">&#120143;</div>
-          <span>X</span>
-        </a>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="footer-inner">
-      <p class="footer-logo">H.Fukuda</p>
-      <p>&copy; 2026 福田寛和. All rights reserved.</p>
-    </div>
+    <p>&copy; 2026 H.Fukuda</p>
   </footer>
 
   <script>
-    /* ===== Particle Animation ===== */
-    const canvas = document.getElementById('particles');
-    const ctx = canvas.getContext('2d');
-    let particles = [];
-
-    function resizeCanvas() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
-    resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
-
-    class Particle {
-      constructor() { this.reset(); }
-      reset() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 3 + 1;
-        this.speedX = (Math.random() - 0.5) * 0.8;
-        this.speedY = (Math.random() - 0.5) * 0.8;
-        this.opacity = Math.random() * 0.5 + 0.2;
-      }
-      update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
-        if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
-      }
-      draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
-        ctx.fill();
-      }
-    }
-
-    for (let i = 0; i < 80; i++) particles.push(new Particle());
-
-    function drawLines() {
-      for (let i = 0; i < particles.length; i++) {
-        for (let j = i + 1; j < particles.length; j++) {
-          const dx = particles[i].x - particles[j].x;
-          const dy = particles[i].y - particles[j].y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-          if (dist < 120) {
-            ctx.beginPath();
-            ctx.strokeStyle = `rgba(255, 255, 255, ${0.1 * (1 - dist / 120)})`;
-            ctx.lineWidth = 0.5;
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.stroke();
-          }
-        }
-      }
-    }
-
-    function animateParticles() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particles.forEach(p => { p.update(); p.draw(); });
-      drawLines();
-      requestAnimationFrame(animateParticles);
-    }
-    animateParticles();
-
-    /* ===== Typing Effect ===== */
-    const phrases = ['プログラマー', 'Web開発者', '動画好き', 'ものづくりが好き'];
-    let phraseIndex = 0, charIndex = 0, isDeleting = false;
-    const typingEl = document.querySelector('.typing-text');
-
-    function typeEffect() {
-      const current = phrases[phraseIndex];
-      typingEl.textContent = isDeleting
-        ? current.substring(0, charIndex--)
-        : current.substring(0, charIndex++);
-      if (!isDeleting && charIndex > current.length) {
-        setTimeout(() => { isDeleting = true; typeEffect(); }, 1800);
-        return;
-      }
-      if (isDeleting && charIndex < 0) {
-        isDeleting = false;
-        phraseIndex = (phraseIndex + 1) % phrases.length;
-      }
-      setTimeout(typeEffect, isDeleting ? 50 : 120);
-    }
-    typeEffect();
-
-    /* ===== Scroll Animations ===== */
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
+    // Smooth scroll for nav links
+    document.querySelectorAll('nav a').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
       });
-    }, { threshold: 0.15 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    });
 
-    /* ===== Skill Bar Animation ===== */
-    const skillObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.querySelectorAll('.skill-fill').forEach(bar => {
-            bar.style.width = bar.dataset.width + '%';
-          });
-        }
-      });
-    }, { threshold: 0.3 });
-    document.querySelectorAll('#skills').forEach(el => skillObserver.observe(el));
-
-    /* ===== Nav Background on Scroll ===== */
+    // Nav background on scroll
     window.addEventListener('scroll', () => {
       document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 50);
     });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.section').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
